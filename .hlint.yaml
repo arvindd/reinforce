@@ -1,0 +1,4 @@
+- ignore: {name: Eta reduce}
+- ignore: {name: Redundant do}
+- ignore: {within: Reinforce.Agents.DoubleQTable._value}
+- ignore: {within: Reinforce.Agents.QTable}

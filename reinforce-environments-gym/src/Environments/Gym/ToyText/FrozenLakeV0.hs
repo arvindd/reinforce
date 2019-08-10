@@ -66,7 +66,7 @@ mkStateFL i
 
 instance FromJSON StateFL where
   parseJSON :: Value -> Parser StateFL
-  parseJSON n@(Number _) = parseJSON n >>= pure . Position
+  parseJSON n@(Number _) = Position <$> parseJSON n
   parseJSON invalid      = typeMismatch "StateFL" invalid
 
 -- | Actions that can be performed in FrozenLakeV0

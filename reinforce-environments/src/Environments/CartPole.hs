@@ -40,7 +40,6 @@ import Control.MonadEnv
 import Control.MonadMWCRandom
 import Data.DList
 import Data.Maybe
-import Control.Monad.IO.Class
 import Control.Monad.Reader.Class
 import Control.Monad.RWS.Class
 import Control.Monad.IO.Class
